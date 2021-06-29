@@ -41,8 +41,15 @@ export default {
         this.characters=await api.getCharacters() 
         this.maxPages=await api.getMaxPages()
   
+    }, 
+    
+    head() {
+      return {
+        title:'Ricky y Morty library'
+      }
     }
 }
+
 </script>
 
 <style >
