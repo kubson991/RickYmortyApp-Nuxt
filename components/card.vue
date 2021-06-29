@@ -58,6 +58,7 @@ export default {
         grid-area: HS;
         height: 2.1em;
         width: 100%;
+        margin-top: 20px;
         text-align: left;
         align-self: center;
     }

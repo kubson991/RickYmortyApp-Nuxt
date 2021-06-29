@@ -21,4 +21,10 @@
     transition: all 0.8s ease-in;
 }
 
- 
+@media (min-width: 1089px) {
+    :root {
+        --header: 3rem;
+        --font-card: 2.2rem; 
+        --footer-paginator:4rem;
+        }
+}
