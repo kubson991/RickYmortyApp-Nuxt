@@ -90,7 +90,6 @@ export default {
         display: inline-block;
         padding: 0;
         margin: 0;
-        font-size: var(--footer-paginator);
     }
     ul.pagination li 
     {display: inline;
@@ -99,6 +98,7 @@ export default {
         color: white;
         float: left;
         padding: 8px 26px;
+        font-size: var(--footer-paginator);
         text-decoration: none;
         transition: background-color .5s;
         cursor: pointer;

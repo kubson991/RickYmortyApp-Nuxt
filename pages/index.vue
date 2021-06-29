@@ -1,7 +1,7 @@
 <template>
     <section>
         <header-m/>
-        <main class="card-container" >
+        <main class="card-container container">
             <card v-for="character in characters" :key="character.id" :character="character" />
         </main>  
         <footer-m :page="page" :maxPages="maxPages" v-on:click="nextPage" />
@@ -46,25 +46,6 @@ export default {
 </script>
 
 <style >
-
-    @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
-
-    *{
-        margin:0;
-        padding:0;
-        box-sizing: border-box;
-        font-size: 62.5%;
-    }
-    html{
-        width: 100vw;
-        overflow-x: hidden;
-    }
-        :root {
-        --header: 3rem;
-        --font-card: 3rem; 
-        --footer-paginator:8rem;
-    }
     body{
         background-image: url("https://i.pinimg.com/originals/0a/eb/52/0aeb52af3cb13c91c0aead5aba52480f.jpg");
         background-position:center;
