@@ -42,14 +42,17 @@ export default {
         this.maxPages=await api.getMaxPages()
   
     }, 
-    
     head() {
       return {
-        title:'Ricky y Morty library'
+        title:'Ricky y Morty library',
+        link: [{
+            rel: 'icon',
+            type:'image/png',
+            href: 'https://i.imgur.com/qvJdxdp.jpg',
+        }]
       }
-    }
+    },
 }
-
 </script> 
 
 <style >
