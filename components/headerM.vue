@@ -1,6 +1,8 @@
 <template>
     <header>
+        <nuxt-link :to="`/`" class="card">
         <p>Rick and Morty Characters</p>
+        </nuxt-link >
         <a href="https://www.facebook.com/sebastian.povedaflorez">Acerca de mi</a>
     </header>  
 </template>
@@ -22,7 +24,6 @@ export default {
 
     header p{
         margin-left: 50px;
-        margin-top: 15px;
         font-size: var(--header);
         color: white;
     }

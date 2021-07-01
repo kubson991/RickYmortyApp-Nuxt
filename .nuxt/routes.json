@@ -1,5 +1,12 @@
 [
   {
+    "name": "characters-id",
+    "path": "/characters/:id?",
+    "component": "/home/sebastian/proyectosPersonales/Rick-y-Morty/pages/characters/_id.vue",
+    "chunkName": "pages/characters/_id",
+    "_name": "_0fc01c3f"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/sebastian/proyectosPersonales/Rick-y-Morty/pages/index.vue",

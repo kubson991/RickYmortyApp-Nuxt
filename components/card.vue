@@ -1,10 +1,10 @@
 <template>
-     <div class="card">
+    <nuxt-link :to="`/characters/${id}`" class="card">
         <img :src="character.image" :alt="character.name">
         <h1>{{name}}</h1>
         <h2>{{species}}</h2>
         <p :class="[status==='Alive'? 'Alive' : status==='Dead'?'Dead':'unknown']">{{status}}</p>
-        </div>    
+    </nuxt-link>  
 </template>
 
 <script>
@@ -18,7 +18,7 @@ export default {
             name:this.character.name,
             species:this.character.species,
             status:this.character.status,
-
+            id:this.character.id,
         }
     }           
 }
@@ -27,8 +27,10 @@ export default {
 <style scoped>
     .card{
         font-family: 'Zen Dots', cursive;
+        text-decoration: none;
         width:100% ;
         height:250px;
+        color: black;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "I H"
